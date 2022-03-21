@@ -73,6 +73,9 @@ def multiplicar(a: int, b: int):
     print(f'multiplication of a * b = {a*b}')
 def main():
     app()
+    app()
+    app()
+    app()
 
 
 if __name__ == '__main__':
