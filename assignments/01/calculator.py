@@ -7,7 +7,7 @@ app = typer.Typer()
 @app.command()
 def suma(a: int, b: int):
     """
-    in this part the sum of a and b will be done 
+    in this part the sum of a and b will be done
 
     parameters
     -----
@@ -21,6 +21,7 @@ def suma(a: int, b: int):
         the sum of a and b
     """
     print(f'sum of a + b = {a+b}')
+
 
 @app.command()
 def resta(a: int, b: int):
@@ -39,6 +40,7 @@ def resta(a: int, b: int):
     """
     print(f'sustraction of a - b = {a-b}')
 
+
 @app.command()
 def division(a: int, b: int):
     """
@@ -47,14 +49,15 @@ def division(a: int, b: int):
 
     parameters:
         a: int
-            dividend 
+            dividend
         b:int
-            divider 
+            divider
     returns
     int
-        the division between a and b 
+        the division between a and b
     """
     print(f'division of a / b = {a/b}')
+
 
 @app.command()
 def multiplicar(a: int, b: int):
@@ -71,6 +74,8 @@ def multiplicar(a: int, b: int):
         the multiplication of a and b
     """
     print(f'multiplication of a * b = {a*b}')
+
+
 def main():
     app()
     app()
