@@ -78,9 +78,6 @@ def multiplicar(a: int, b: int):
 
 def main():
     app()
-    app()
-    app()
-    app()
 
 
 if __name__ == '__main__':
