@@ -82,15 +82,18 @@ def suma(a: int, b: int):
     res = calculadora.suma(a, b)
     print(f'la suma entre {a} y {b} es de {res}')
 
+
 @app.command()
 def resta(a: int, b: int):
     res = calculadora.resta(a, b)
     print(f'la resta entre {a} y {b} es de {res}')
 
+
 @app.command()
 def multiplicacion(a: int, b: int):
     res = calculadora.multiplicar(a, b)
     print(f'la multiplicacion entre {a} y {b} es de {res}')
+
 
 @app.command()
 def division(a: int, b: int):
