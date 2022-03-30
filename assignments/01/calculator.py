@@ -58,7 +58,14 @@ class calculadora():
         int
             the division between a and b
         """
-        return a / b
+        while b == 0:
+            try:
+                a / b
+                break
+            except ZeroDivisionError as e:
+                return e
+
+        return a/b
 
     @staticmethod
     def multiplicar(a, b):
