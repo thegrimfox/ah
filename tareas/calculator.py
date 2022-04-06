@@ -1,4 +1,5 @@
-import tareas.logger import Logger
+from tareas.logger import Logger
+
 
 class calulator():
     def __init__(self) -> None:
