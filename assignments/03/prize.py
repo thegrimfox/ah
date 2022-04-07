@@ -1,4 +1,5 @@
 import json
+from string import whitespace
 
 
 def get_number_of_prizes_in_peace_cat():
@@ -13,7 +14,9 @@ def get_number_of_prizes_in_peace_cat():
     # -----------------
     # Start code
     # ----------------
-    pass
+    with open('paz.json', 'r') as f:
+        d = json.load(f)
+
     # -----------------
     # End code
     # ----------------
