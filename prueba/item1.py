@@ -1,9 +1,9 @@
 def sum(x, y, z):
-    sum = x+y+z
-    x = 2
-    y = 3
-    z = 3
+    sum = x + y + z
 
-    xyz = sum(x, y, z)
+    if x == y == z:
+        sum = sum * 3
+    return sum
 
-    return x + y + z
+
+print(sum(2, 3, 3))
