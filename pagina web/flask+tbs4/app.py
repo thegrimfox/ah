@@ -20,5 +20,6 @@ def index():
 def search():
     teacher_name = request.form['teacher_name']
     html_text = get_horarios()
+    print(html_text)
     soup = bs4.BeautifulSoup(html_text, 'html.parser')
     return render_template('search.html', teacher_name=teacher_name)
