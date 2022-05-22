@@ -8,7 +8,7 @@ int main(int argc, char **argv)
 {
     int Aflag = 0;
     int Bflag = 0;
-    char sum[5], res[5], div[5], mul[5];
+    char sum[5], res[5], div[5], mul[5], operacion[0];
     int c, sul;
 
     opterr = 0;
@@ -23,25 +23,26 @@ int main(int argc, char **argv)
             Bflag = atoi(optarg);
             break;
         case 't':
-            if (optarg == sum)
-            {
-                sul = Aflag + Bflag;
-            }
-            else if (optarg == res)
-            {
-                sul = Aflag - Bflag;
-            }
-            else if (optarg == mul)
-            {
-                sul = Aflag * Bflag;
-            }
-            else if (optarg == div)
-            {
-                sul = Aflag / Bflag;
-            }
+            operacion = optarg;
             break;        
         default:
             break;
+        }
+        if (operacion == sum)
+        {
+            sul = Aflag + Bflag;
+        }
+        else if (operacion == res)
+        {
+            sul = Aflag - Bflag;
+        }
+        else if (operacion == div)
+        {
+            sul = Aflag / Bflag;
+        }
+        else if (operacion == mul)
+        {
+            sul = Aflag * Bflag;
         }
     printf("la operacion seleccionada entre %d y %d el resultado final fue: %d", Aflag, Bflag, sul);
     return 0;
