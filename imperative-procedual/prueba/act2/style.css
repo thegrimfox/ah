@@ -1,0 +1,11 @@
+body{
+    font-family: sans-serif;
+}
+p{
+    font-family: helvetica;
+    background-color: blue;
+    color: white;
+}
+.p1{
+    font-family: 'arial';
+}
