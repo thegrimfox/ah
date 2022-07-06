@@ -1,0 +1,17 @@
+body{
+  color: rgb(255, 255, 255);
+  background-image: url(https://static2.abc.es/media/201206/26/gato-pc--644x362.jpg);
+}
+#inicio{
+  text-align: center;
+}
+#busqueda{
+  text-align: center;
+}
+#resultado{
+display: grid;
+  grid-template-columns: auto auto;
+}
+.buscar{
+    
+}

@@ -1,0 +1,12 @@
+alert(5 % 2);
+alert(2 ** 2);
+alert(4 ** (1/2));
+let s = "my " + "string";
+alert(s);
+alert('1' + 2);
+let x = 2 - 2 * 2;
+alert(x);
+let n = 2;
+n += 5;
+n *= 2;
+alert(n);
